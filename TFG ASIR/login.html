@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuenta Nintendo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body class="new">
+    <div class="sidebar">
+        <a href="index.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Nintendo.svg/320px-Nintendo.svg.png" alt="Nintendo Logo" class="nintendo-logo"></a>
+        <ul>
+            <li><i class="bi bi-star-half text-white" style="font-size: 2.5rem;"></i> Juegos</li>
+            <li><i class="bi bi-dpad-fill text-white" style="font-size: 2.5rem;"></i> Hardware</li>
+            <li><i class="bi bi-nintendo-switch text-white" style="font-size: 2.5rem;"></i> Nintendo Switch Online</li>
+            <li><i class="bi bi-bag text-white" style="font-size: 2.5rem;"></i> Nintendo eShop</li>
+            <li><i class="bi bi-people-fill text-white" style="font-size: 2.5rem;"></i> Síguenos</li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="navbar">
+            <div class="actions">
+                <a href="#"><div><center> <i class="bi bi-search text-white"></i><br>Buscar</center></div></a>
+                <a href="index.html"><div><center><i class="bi bi-heart text-white"></center></i>Lista de deseos</div></a>
+                <a href="login.html"><div><center><i class="bi bi-person-fill text-white"></center></i>Iniciar sesión</div></a>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="news-section">
+                <div class="container">
+                    <div class="login-container">
+                      <div class="login-header">
+                        <h3>Iniciar sesión</h3>
+                        <p>Bienvenido al mundo de Nintendo</p>
+                      </div>
+                      <form id="loginForm" method="post">
+                        <div class="mb-3">
+                          <label for="username" class="form-label">Usuario</label>
+                          <center><input type="text" class="form-control" id="username" name="username" placeholder="Introduce tu usuario" required></center>
+                          <br><br><br>
+                        </div>
+                        <div class="mb-3">
+                          <label for="password" class="form-label">Contraseña</label>
+                          <center><input type="password" class="form-control" id="password" name="password" placeholder="Introduce tu contraseña" required></center>
+                          <br><br><br>
+                        </div>
+                        <div class="checkbox-container mb-3">
+                          <input type="checkbox" id="rememberMe" class="form-check-input me-2">
+                          <label for="rememberMe" class="form-check-label">Recordarme</label>
+                        </div>
+                        <center><button type="submit" class="btn btn-login w-100">Iniciar sesión</button></center>
+                      </form>
+                    </div>
+                    <div class="final">
+                        <h2><center>Nos pondremos en contacto con usted en los próximos <span style="color: red;">5 días hábiles</span><br><br></center></h2>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
+
