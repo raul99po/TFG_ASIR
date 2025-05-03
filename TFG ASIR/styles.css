@@ -10,7 +10,7 @@ body {
 
 .index {
     display: flex;
-    background-image: url(https://www.tecnogeek.com/wp-content/uploads/2025/01/Nintendo-Switch-2-screen-joy-cons-SOURCE-Nintendo.jpg);
+    background-image: url('https://www.tecnogeek.com/wp-content/uploads/2025/01/Nintendo-Switch-2-screen-joy-cons-SOURCE-Nintendo.jpg');
     background-size: 100% auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -18,7 +18,10 @@ body {
 }
 
 .new {
-    background-color: rgb(172, 171, 171);
+    background-image: url('https://wallpapercave.com/wp/wp5992249.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 }
 
 .sidebar {

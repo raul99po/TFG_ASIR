@@ -1,0 +1,7 @@
+CREATE DATABASE tfg;
+USE tfg;
+CREATE TABLE credenciales(
+COD INT AUTO_INCREMENT PRIMARY KEY,
+usuario VARCHAR(20) UNIQUE,
+contraseña VARCHAR(15));
+
