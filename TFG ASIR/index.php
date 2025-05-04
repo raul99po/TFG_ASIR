@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nintendo - PREMIOS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body class="index">
+    <div class="sidebar">
+        <a href="index.php"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Nintendo.svg/320px-Nintendo.svg.png" alt="Nintendo Logo" class="nintendo-logo"></a>
+        <ul>
+            <li><a href="https://www.nintendo.com/es-es/Juegos/Juegos-347085.html"><i class="bi bi-star-half text-white" style="font-size: 2.5rem;"></i> Juegos</a></li>
+            <li><a href="https://www.nintendo.com/es-es/Hardware/Nintendo-Switch-2/Nintendo-Switch-2-2785301.html"><i class="bi bi-dpad-fill text-white" style="font-size: 2.5rem;"></i> Hardware</a></li>
+            <li><a href="https://www.nintendo.com/es-es/Nintendo-Switch-Online/Nintendo-Switch-Online-Informacion-general-1183143.html"><i class="bi bi-nintendo-switch text-white" style="font-size: 2.5rem;"></i> Nintendo Switch Online</a></li>
+            <li><a href="https://www.nintendo.com/es-es/Nintendo-eShop/Nintendo-eShop-1806894.html"><i class="bi bi-bag text-white" style="font-size: 2.5rem;"></i> Nintendo eShop</a></li>
+            <li><a href=""><i class="bi bi-people-fill text-white" style="font-size: 2.5rem;"></i> Síguenos</a></li>
+        </ul>
+    </div>
+        <div class="navbar">
+            <div class="actions">
+                <a href="#"><div><center><i class="bi bi-search text-white"></i><br>Buscar</center></div></a>
+                <a href="index.php"><div><center><i class="bi bi-heart text-white"></i><br>Lista de deseos</center></div></a>
+                <a href="login.php"><div><center><i class="bi bi-person-fill text-white"></i><br>Iniciar sesión</center></div></a>
+            </div>
+        </div>
+        <div class="content">
+        <!-- Sección principal con imagen y texto -->
+        <div class="container mt-5">
+            <div class="row"><br><br><br><br><br><br><br><br><br><br><br>
+                <div class="col-lg-6 col-12" id="contenido_felicitaciones" style="text-align: center; align-items: center;">
+                    <h1 class="felicidades fw-bold fade-in-text">¡Felicidades! Has ganado una <span style="color: #e60012;">Nintendo Switch 2</span></h1>
+                    <h2 class="fade-in-text"><a href="login.php" class="ini-hover fade-in-text fade-in-text">Inicia sesión</a> para que te podamos enviar una unidad.</h2>
+                    <p class="fade-in-text">¡Qué emoción! Has sido el gran ganador del increíble sorteo organizado por Nintendo,<br> 
+                        has sido seleccionado como uno de los afortunados ganadores de la <strong><em>Nintendo Switch 2</em></strong>!
+                    </p>
+                    <h3 class="mt-4 fade-in-text">¡Gracias por ser parte de este increíble sorteo y enhorabuena!</h3>
+                    <h2 class="fade-in-text">¡Disfruta de nuestros mejores títulos!</h2>
+                    <center>
+                      <div class="contenedor fade-in-text">
+                          <div class="item fade-in-text">
+                              <a href="https://www.nintendo.com/es-es/Juegos/Juegos-de-Nintendo-Switch-2/Mario-Kart-World-2790000.html">
+                                  <img src="https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_MarioKart8Deluxe_image1600w.jpg" alt="Mario Kart 8">
+                              </a>
+                          </div>
+                          <div class="item fade-in-text">
+                              <a href="https://www.nintendo.com/es-es/Juegos/Nintendo-Switch-2-Edition/The-Legend-of-Zelda-Tears-of-the-Kingdom-Nintendo-Switch-2-Edition-2787249.html">
+                                  <img src="https://www.nintendo.com/eu/media/images/assets/nintendo_switch_2_games/thelegendofzeldatearsofthekingdomnintendoswitch2edition/2x1_HP_NSwitch2_TLoZTotKN.jpg" alt="Zelda Tears of the Kingdom">
+                              </a>
+                          </div>
+                          <div class="item fade-in-text">
+                              <a href="https://www.nintendo.com/es-es/Juegos/Juegos-de-Nintendo-Switch/Super-Mario-Party-Jamboree-2591147.html?srsltid=AfmBOor7mTwy20H1fVPS4R6ufCzW2sVzBO9Tyfo-TKp5XoOAM44weGNg">
+                                  <img src="https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_4/2x1_NSwitch_SuperMarioPartyJamboree_image1600w.jpg" alt="Super Mario Party Jamboree">
+                              </a>
+                          </div>
+                      </div>
+                  </center>
+                </div>
+            </div>
+        </div>
+
+    </div>
+<script>
+  // Detecta cuando la página ha terminado de cargar
+document.addEventListener("DOMContentLoaded", function() {
+    // Agrega la clase "visible" a los elementos con la clase "fade-in-text"
+    const fadeInText = document.querySelectorAll('.fade-in-text');
+    fadeInText.forEach(function(element) {
+        element.classList.add('visible');
+    });
+});
+</script>
+</body>
+</html>
