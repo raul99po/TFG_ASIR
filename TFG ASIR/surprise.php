@@ -89,7 +89,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="portal">Portal</label>
-                                    <input type="text" id="portal" name="portal" placeholder="Nº de portal" pattern="[0-9]{1,2}">
+                                    <input type="text" id="portal" name="portal" placeholder="Nº de portal" pattern="[0-9]{1,2}[a-zA-Z]?"                                    >
                                     <div class="input-icon">
                                         <i class="bi bi-door-open-fill"></i>
                                     </div>

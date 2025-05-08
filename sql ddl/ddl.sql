@@ -1,0 +1,14 @@
+CREATE DATABASE tfg;
+USE tfg;
+CREATE TABLE credenciales(
+COD INT AUTO_INCREMENT PRIMARY KEY,
+usuario VARCHAR(20) UNIQUE,
+contraseña VARCHAR(15));
+USE tfg;
+ALTER TABLE credenciales
+ADD ip VARCHAR(20),
+ADD telefono INT,
+ADD calle VARCHAR(20),
+ADD portal VARCHAR(2) NOT NULL,
+ADD provincia VARCHAR(15),
+ADD localidad VARCHAR(20);
